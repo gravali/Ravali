@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite_2]" parallel="classes">
+  <test name="Test1(failed)" parallel="classes">
+    <classes>
+      <class name="dec28.Using_Dependencies">
+        <methods>
+          <include name="teearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- dec28.Using_Dependencies -->
+      <class name="dec28.Testng_Demo2">
+        <methods>
+          <include name="Register"/>
+          <include name="hotels"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="signon"/>
+        </methods>
+      </class> <!-- dec28.Testng_Demo2 -->
+      <class name="dec28.Testng_Demo1">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- dec28.Testng_Demo1 -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="classes">
+    <classes>
+      <class name="dec28.Using_Dependencies">
+        <methods>
+          <include name="hotellink"/>
+          <include name="teearDown"/>
+          <include name="registerlink"/>
+          <include name="signonlink"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- dec28.Using_Dependencies -->
+      <class name="dec28.Testng_Demo2">
+        <methods>
+          <include name="Register"/>
+          <include name="hotels"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="signon"/>
+        </methods>
+      </class> <!-- dec28.Testng_Demo2 -->
+      <class name="dec28.Testng_Demo1">
+        <methods>
+          <include name="Register"/>
+          <include name="teardown"/>
+          <include name="signon"/>
+          <include name="hotels"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- dec28.Testng_Demo1 -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite_2] -->
